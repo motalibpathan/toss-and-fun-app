@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toss App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: linear-gradient();
+      }
+      .btn-circle {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+      }
+      .btn-btm {
+        border-radius: 50%;
+        width: 110px;
+        height: 110px;
+        background-color: rgb(95, 252, 147);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="toss">
+      <h1 class="text-center text-light bg-success p-2">Toss App</h1>
+      <br />
+      <div class="container">
+        <div id="options">
+          <h5><label for="option1">Option 1</label></h5>
+          <input class="form-control" type="text" name="" id="option1" />
+          <br />
+          <h5><label for="option2">Option 2</label></h5>
+          <input class="form-control" type="text" name="" id="option2" />
+        </div>
+      </div>
+      <br />
+      <div class="container d-flex justify-content-center">
+        <div class="btn-btm d-flex align-items-center justify-content-center">
+          <button id="tossBtn" class="btn btn-success btn-circle">
+            TOSS OPTIONS
+          </button>
+        </div>
+      </div>
+
+      <br /><br />
+      <div class="container">
+        <div id="output"></div>
+      </div>
+      <br /><br />
+    </div>
+
+    <div id="work">
+      <h1 class="text-center bg-warning p-2">Fun App</h1>
+      <br />
+      <div class="container">
+        <h4>Are you free, no work for do?</h4>
+        <button
+          id="workBtn"
+          class="btn btn-danger fw-bold"
+          onclick="fetchWork();"
+        >
+          Load Work
+        </button>
+        <br /><br />
+        <div id="workOutput"></div>
+        <br /><br />
+      </div>
+    </div>
+
+    <h3 class="text-center">Switch App</h3>
+    <h5 class="text-center">
+      <button
+        onclick="hideApp('work', 'toss')"
+        class="text-center fw-bold btn btn-warning"
+      >
+        Fun App
+      </button>
+      <button
+        onclick="hideApp('toss', 'work')"
+        class="text-center fw-bold btn btn-success"
+      >
+        Toss App
+      </button>
+    </h5>
+    <br />
+    <footer>
+      <h5 class="text-center bg-light p-2">Created by Motalib Pathan - 2021</h5>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

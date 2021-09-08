@@ -1,5 +1,5 @@
 document.getElementById("tossBtn").addEventListener("click", toss);
-document.addEventListener("DOMContentLoaded", hideApp("toss", "work"));
+// document.addEventListener("DOMContentLoaded", hideApp("toss", "work"));
 const output = document.getElementById("output");
 const workOutput = document.getElementById("workOutput");
 
@@ -49,4 +49,5 @@ function show(data) {
 function hideApp(show, hide) {
   document.getElementById(`${show}`).style.display = "block";
   document.getElementById(`${hide}`).style.display = "none";
+  document.title = `${show === "toss" ? "Toss App" : "Fun App"}`;
 }
